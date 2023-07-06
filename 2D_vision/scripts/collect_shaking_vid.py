@@ -40,7 +40,7 @@ def shake_bottle (fa, rec_duration=11):
     # To saved position
     print ("1 To saved shake position")
     fa.goto_pose(saved_pose)
-    time.sleep (2)
+    time.sleep (60)
     
     print ("2 Shake movement")
     saved_pose.translation += np.array ([0.15, 0.0, 0.0]) # 20cm in X direction
@@ -64,7 +64,7 @@ def shake_bottle (fa, rec_duration=11):
 
 
 grip_force = 160
-num_videos = 10
+num_videos = 1
 
 if __name__ == "__main__":
     print ("Initializing FrankaArm")
